@@ -6,10 +6,10 @@
 
 <meta name="google-site-verification" content="31wS4ftuCbwaM2HObA8l4qJ1tmSp-0Xwba6T-O3TxjY" />
 
-<title>Interior Designers in Chennai | Construction & Renovation Experts – FourArms Interiors</title>
+<title>Interior Designers | Construction & Renovation Experts – FourArms Interiors</title>
 
 
-<meta name="description" content="FourArms Interiors is a trusted construction and renovation company in Chennai offering Interior Works, Exterior Works, Building Lifting, Truss Work and PUF Panel solutions. Call +91 9962651176 for a free consultation.">
+<meta name="description" content="FourArms Interiors is a trusted construction and renovation company  offering Interior Works, Exterior Works, Building Lifting, Truss Work and PUF Panel solutions. Call +91 9962651176 for a free consultation.">
 
 <meta name="keywords" content="Interior Designers Chennai, Construction Company Chennai, Renovation Services Chennai, Building Lifting Chennai, Truss Work Chennai, PUF Panel Work Chennai, FourArms Interiors">
 
@@ -51,7 +51,7 @@
   "url": "https://fourarmsinteriors.com/"
 }
 </script>
-
+<!-- CUSTOM CSS -->
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{scroll-behavior:smooth;background:#f8f9fa;line-height:1.6}
@@ -101,7 +101,7 @@ nav a:hover{color:#F9A826}
 /* HERO */
 .hero{
 height:100vh;
-background:url('./images/home-image-compress.jpg') center/cover no-repeat;
+background:url('./Image/background.png') center/cover no-repeat;
 display:flex;
 align-items:center;
 position:relative;
@@ -554,9 +554,56 @@ height:250px;
 
 }
 
+.feedback-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.feedback-section form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.feedback-section button {
+  padding: 12px;
+  border: none;
+  background: #F9A826;;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 300px;
+  background: #22c55e;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.toast.show {
+  visibility: visible;
+}
+
 </style>
 </head>
-
+<!-- HTML SECTION -->
 <body>
 
 <header>
@@ -571,8 +618,8 @@ height:250px;
 <li><a href="#contact">Contact</a></li>
 </ul>
 
-<a href="tel:+919962651176" class="mobile-call">
-   <span><i class="fa fa-phone"></i> 99626 51176</span>
+<a href="tel:+919087449963" class="mobile-call">
+   <span><i class="fa fa-phone"></i> 90874 49963</span>
 </a>
 
 </nav>
@@ -584,10 +631,10 @@ height:250px;
 <div class="hero-content">
 <h1>Premium Construction & Renovation Experts</h1>
 <p>Transforming spaces with Interior, Exterior, Renovation, Building Lifting , Truss & PUF Panel Solutions.</p>
-<a href="tel:+919962651176" class="btn">
+<a href="tel:+919087449963" class="btn">
   <i class="fas fa-phone"></i> Call Now
 </a>
-<a href="https://wa.me/919962651176" class="btn whatsapp-btn">WhatsApp</a>
+<a href="https://wa.me/919087449963" class="btn whatsapp-btn">WhatsApp</a>
 </div>
 </section>
 
@@ -684,58 +731,66 @@ FourArms Interiors is a trusted construction and renovation company delivering i
 <!-- CTA -->
 <section class="cta">
 <h2>Ready To Start Your Project?</h2>
-<a href="tel:+919962651176" class="btn">Get Free Consultation</a>
+<a href="tel:+919087449963" class="btn">Get Free Consultation</a>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
 <h2>Contact Us</h2>
-<p><i class="fas fa-phone"></i> +91 9962651176</p>
-<p><i class="fas fa-envelope"></i> aaron.fourarms@gmail.com</p>
-<p><i class="fas fa-location-dot"></i> No 33/b Periyar Nagar, Kanagam, Taramani, Chennai 600113, India</p>
+<p><i class="fas fa-phone"></i> +91 9087449963</p>
+<p><i class="fas fa-envelope"></i> fourarms@gmail.com</p>
+<p><i class="fas fa-location-dot"></i> Kanchipuram</p>
 
 <!-- <div class="social-icons">
   <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
   <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
   <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-  <a href="https://wa.me/917604980698" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://wa.me/919087449963" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </div> -->
 
 </section>
 
-<section id="location" class="location-section">
+<section id="feedback" class="feedback-section">
+  <h2>Feedback</h2>
 
-<h2>Our Location</h2>
+  <div class="container">
+    <form id="feedbackForm">
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter Your Name"
+        required
+      />
 
-<div class="container">
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required
+      />
 
-<div class="map-container">
+      <textarea
+        id="message"
+        rows="5"
+        placeholder="Enter Your Feedback"
+        required
+      ></textarea>
 
-<iframe 
-src="https://www.google.com/maps?q=No+33/b+Periyar+Nagar,+Kanagam,+Taramani,+Chennai+600113,+India&output=embed"
-width="100%"
-height="350"
-style="border:0;border-radius:12px;"
-allowfullscreen=""
-loading="lazy"
-referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-</div>
-
-<p style="text-align:center;margin-top:20px;color:#555;">
-FourArms Interiors Office – No 33/b Periyar Nagar, Kanagam, Taramani, Chennai, Tamil Nadu 600113
-</p>
-
-</div>
-
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
 </section>
+
+<!-- Toast -->
+<div id="toast" class="toast">
+  Feedback submitted successfully!
+</div>
 
 <footer>
 © 2026 FourArms Interiors. All Rights Reserved.
 </footer>
 
-<a href="https://wa.me/919962651176" class="floating-whatsapp">
+<a href="https://wa.me/919087449963" class="floating-whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -751,77 +806,77 @@ FourArms Interiors Office – No 33/b Periyar Nagar, Kanagam, Taramani, Chennai,
     <div class="modal-gallery">
 
       <!-- INTERIOR -->
-      <img src="images/interior-1.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-2.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-3.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-4.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-5.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-6.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-7.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-8.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-9.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
-      <img src="images/interior-10.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-1.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-2.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-3.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-4.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-5.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-6.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-7.webp"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-8.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-9.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
+      <img src="https://fourarmsinteriors.com/images/interior-10.jpg"  alt="Interior Design Project in Chennai" class="gallery-item interior">
 
       <!-- EXTERIOR -->
-      <img src="images/exterior-1.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-2.webp" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-3.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-4.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-5.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-6.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-7.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-8.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-9.webp" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
-      <img src="images/exterior-10.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-1.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-2.webp" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-3.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-4.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-5.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-6.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-7.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-8.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-9.webp" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
+      <img src="https://fourarmsinteriors.com/images/exterior-10.jpg" alt="Exterior Design Project in Chennai" class="gallery-item exterior">
 
       <!-- RENOVATION -->
-      <img src="images/renovation-9.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-2.0.webp" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-2.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-3.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-4.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-5.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-6.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-7.webp" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-8.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
-      <img src="images/renovation-1.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-9.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-2.0.webp" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-2.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-3.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-4.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-5.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-6.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-7.webp" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-8.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
+      <img src="https://fourarmsinteriors.com/images/renovation-1.jpg" alt="Renovation Project in Chennai" class="gallery-item renovation">
 
       <!-- LIFTING -->
-      <img src="images/Rotate-building.webp" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-2.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-3.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-4.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-5.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-6.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-7.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-8.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-9.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
-      <img src="images/lifting-10.webp" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/Rotate-building.webp" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-2.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-3.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-4.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-5.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-6.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-7.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-8.jpg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-9.jpeg" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
+      <img src="https://fourarmsinteriors.com/images/lifting-10.webp" alt="Building Lifting Project in Chennai" class="gallery-item lifting">
 
       <!-- TRUSS -->
 
-      <img src="images/truss-1.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-2.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-3.jpeg" alt="Truss Project in Chennai" class="gallery-item truss">     
-      <img src="images/truss-4.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-5.jpg" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-6.jpeg" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-7.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-8.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-9.webp" alt="Truss Project in Chennai" class="gallery-item truss">
-      <img src="images/truss-10.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-1.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-2.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-3.jpeg" alt="Truss Project in Chennai" class="gallery-item truss">     
+      <img src="https://fourarmsinteriors.com/images/truss-4.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-5.jpg" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-6.jpeg" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-7.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-8.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-9.webp" alt="Truss Project in Chennai" class="gallery-item truss">
+      <img src="https://fourarmsinteriors.com/images/truss-10.webp" alt="Truss Project in Chennai" class="gallery-item truss">
 
       <!-- PUFF PANEL -->
-      <img src="images/puff-1.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-2.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-3.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-4.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-5.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-6.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-7.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-8.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-9.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
-      <img src="images/puff-10.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-1.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-2.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-3.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-4.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-5.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-6.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-7.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-8.webp" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-9.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
+      <img src="https://fourarmsinteriors.com/images/puff-10.jpg" alt="PUFF Panel Project in Chennai" class="gallery-item puf">
 
     </div>
   </div>
@@ -887,6 +942,49 @@ document.getElementById("popupImg").src=this.src;
 
 function closeImagePopup(){
 document.getElementById("imagePopup").style.display="none";
+}
+
+const feedbackForm = document.getElementById("feedbackForm");
+
+feedbackForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const feedbackData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/feedback", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(feedbackData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      showToast("Feedback submitted successfully!");
+      feedbackForm.reset();
+    } else {
+      showToast(result.message);
+    }
+  } catch (error) {
+    showToast("Server Error");
+  }
+});
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.innerText = message;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
 }
 </script>
 </body>
